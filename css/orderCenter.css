@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+
+.topNav {
+    background: #101010;
+    height: 28px;
+    font: 14px/2em 微软雅黑;
+}
+
+.topNav>div {
+    color: #bbb;
+    text-align: right;
+}
+
+.topNav>div>a {
+    color: #f60;
+}
+
+.topNav>div>p {
+    float: left;
+    margin-left: 260px;
+
+}
+
+.header {
+    height: 104px;
+}
+
+.logo {
+    position: absolute;
+    width: 258px;
+    height: 104px;
+    margin-top: -28px;
+    background-image: url(../images/login/bgLogo.jpg);
+}
+
+.logo p {
+    float: right;
+    width: 100px;
+    margin-right: 15px;
+    line-height: 104px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.search {
+    float: right;
+    width: 440px;
+    height: 104px;
+}
+
+.search>.lookup {
+    width: 100%;
+    height: 36px;
+    margin-top: 10px;
+    border: 1px solid #f60;
+}
+
+.search>.lookup input {
+    width: 390px;
+    height: 34px;
+    text-indent: 10px;
+    border: none;
+}
+
+.search>.lookup p {
+    float: right;
+    width: 50px;
+    height: 36px;
+    text-indent: -9999px;
+    background-image: url(../images/bgicon.png);
+    cursor: pointer;
+}
+
+
+
+.order>.info1 {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.info2,
+.goodsList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 60px;
+    color: #444;
+    background-color: #f2f2f2;
+}
+
+.info2>p,
+.goodsList>p {
+    margin-left: 10px;
+}
+
+.info2>a,
+.goodsList>a {
+    color: #4491eb;
+    margin-right: 10px;
+}
+
+.address,
+.payMethod {
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+    margin: 20px 0 0 35px;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.address p {
+    width: 125px;
+    height: 36px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.address>div {
+    margin-left: 40px;
+}
+
+.address>.default {
+    width: 125px;
+    margin-left: 160px;
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+}
+
+.moreAddress {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.moreAddress>.tit {
+    width: 125px;
+    margin-left: 25px;
+    color: #666;
+}
+
+.payMethod {
+    margin-bottom: 50px;
+}
+
+.payMethod p {
+    width: 125px;
+    line-height: 36px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.payMethod span {
+    cursor: pointer;
+}
+
+.goodsList>a.price {
+    margin-right: -800px;
+}
+
+.goodsList_ {
+    width: 100%;
+    height: 270px;
+    margin-top: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.goodsList_>.left {
+    float: left;
+    width: 446px;
+    height: 255px;
+    /* background-color: gold; */
+}
+
+.goodsList_>.left>.tit {
+    width: 125px;
+    line-height: 40px;
+    margin: 10px 0 5px 10px;
+    color: #666;
+}
+
+.goodsList_>.left>.pay_ {
+    width: 125px;
+    line-height: 36px;
+    margin: 0 0 35px 35px;
+    text-align: center;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.goodsList_>.left>.method,
+.goodsList_>.left>.time {
+    width: 100%;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.goodsList_>.left>.method>span,
+.goodsList_>.left>.time>span {
+    color: #666;
+}
+
+.goodsList_>.left>.method>a,
+.goodsList_>.left>.time>a {
+    float: right;
+    color: #4491eb;
+}
+
+.goodsList_>.right {
+    float: right;
+    width: 735px;
+    height: 255px;
+    background-color: #f2f2f2;
+}
+
+.goodsList_>.right>.info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+}
+
+.goodsList_>.right>.info>img {
+    margin: 20px 0 0 20px;
+}
+
+.bill {
+    width: 330px;
+    height: 80px;
+    margin: 20px 0 0 10px;
+}
+
+.bill>p {
+    line-height: 40px;
+}
+
+.bill>div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.bill>div>a {
+    margin-left: 20px;
+    color: #4491eb;
+}
+
+.count {
+    display: flex;
+    width: 100%;
+    line-height: 60px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.count>p {
+    color: #a0a0a0;
+    font-size: 15px;
+}
+
+.count span {
+    color: #f60;
+    font-size: 18px;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.submit input {
+    text-indent: 5px;
+    color: #4d4d4d;
+}
+
+.submit p {
+    color: #4d4d4d;
+}
+
+.submit>.btn {
+    width: 139px;
+    line-height: 60px;
+    margin-left: 414px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #f60;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 蒙版效果样式 */
+/*
+    重：蒙层效果原理是一个蒙层盒子（mask）设置固定定位且宽高为百分百，再加一个盒子在蒙版盒子上面，定位为绝对定位，且层级要比     蒙层盒子的层级高，就出现 “压在上面” 的效果
+*/
+.mask {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+#wrap {
+    position: absolute;
+    z-index: 100;
+    width: 470px;
+    height: 278px;
+    /* margin: 100px auto; */
+    /* box-shadow: 5px 5px 5px #ccc; */
+    border: 2px solid #ccc;
+    display: none;
+}
+
+#wrap .top {
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+    background-color: #ccc;
+    color: #676767;
+}
+
+#wrap .top>p {
+    margin-left: 10px;
+}
+
+#wrap .top>span {
+    margin-left: 375px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#wrap .choose {
+    width: 100%;
+    height: 238px;
+    background-color: #fff;
+}
+
+#wrap .choose .question {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 90px;
+}
+
+#wrap .choose>.btn {
+    display: flex;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#wrap .choose>.btn button {
+    width: 120px;
+    line-height: 40px;
+    margin-right: 27px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+button.cancle {
+    background-color: #e6e6e6;
+    color: #666;
+}
+
+button.confirm {
+    background-color: #f60;
+    color: #fff;
+}
+
+
+
+.selected {
+    border: 2px solid #f60 !important;
+    background: url(../images/books/hook.jpg) no-repeat bottom right/12px;
+    /* background复合样式顺序：background : background-color background-image background-repeat background-attachment background-position; */
+}
+
+
+/* 底部样式 */
+.poster {
+    height: 90px;
+    margin-top: 40px;
+    background-image: url(../images/books/poster.jpg);
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* margin-top: 50px; */
+    background-color: #f2f2f2;
+    border-top: 5px solid #f60;
+}
+
+.footer>.con>img {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.footer>a>img {
+    position: absolute;
+    top: -55px;
+    right: 200px;
+}
+
+.footerCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* background-color: lime; */
+}
+
+.footerCon ul {
+    width: 120px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    margin-left: 90px;
+}
+
+.footerCon ul li {
+    margin-top: 10px;
+}
+
+.footerCon ul li a {
+    color: #737373;
+}
+
+.footerCon ul li a:hover {
+    color: red;
+}
+
+.footerCon img {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footerBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 50px;
+    margin-top: 10px;
+    /* background-color: lime; */
+}
+
+.footerBar li {
+    float: left;
+    margin-right: 28px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+
+.copyRight {
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: '黑体';
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #555;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}

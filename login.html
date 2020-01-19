@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <!-- 头部导航及logo -->
+    <div class="topNav">
+        <div class="container">
+            <p>legochina.cn</p>
+            欢迎光临<a href="index.html">乐购商城</a>，请 <a href="#" onclick="return false">登陆</a> / <a href="register.html">注册</a>
+        </div>
+    </div>
+    <div class="logo container clearfix">
+        <img src="./images/login/logo.jpg" alt="">
+        <p>欢迎登录</p>
+    </div>
+
+    <!-- 中间登录表单 -->
+    <div class="content">
+        <form action="#">
+            <!-- 选择登录方式 -->
+            <ul class="login-way clearfix">
+                <li class="one on">扫码登录</li>
+                <li class="two">账户登录</li>
+            </ul>
+            <!-- 显示对应方式的内容 -->
+            <ul class="login-method">
+                <li class="two ">
+                    <div>
+                        <img src="./images/login/erweima.jpg" alt="">
+                        <img src="./images/login/sweep-code.jpg" alt="">
+                    </div>
+                    <p>
+                        <span>打开手机版</span>
+                        <span>乐购APP</span>
+                        <span>扫一扫</span>
+                    </p>
+                </li>
+                <li class="one">
+                    <p>
+                        <img src="./images/login/user.jpg" alt="">
+                        <input type="text" placeholder="请输入用户名">
+                    </p>
+                    <p style="margin-top: 20px;">
+                        <img src="./images/login/pwd.jpg" alt="">
+                        <input type="password" placeholder="请输入密码">
+                    </p>
+                    <div>
+                        <input type="checkbox">自动登录
+                        <span><a href="#">忘记密码</a></span>
+                    </div>
+                    <div class="btn">登录</div>
+                    <div class="register">
+                        <p style="border: 0;">
+                            <img src="./images/login/go.jpg" alt="" width="24px" height="24px">
+                            <span><a style="color: #f60;" href="./register.html">立即注册</a></span>
+                        </p>
+                    </div>
+
+            </ul>
+        </form>
+    </div>
+
+    <!-- 底部网站信息栏 -->
+    <ul class="footerBar clearfix">
+        <li><a href="#">公司简介</a></li>
+        <li> | </li>
+        <li><a href="#">Investor Relations</a></li>
+        <li> | </li>
+        <li><a href="#">网站联盟</a></li>
+        <li> | </li>
+        <li><a href="#">乐购招商</a></li>
+        <li> | </li>
+        <li><a href="#">机构销售</a></li>
+        <li> | </li>
+        <li><a href="#">手机乐购</a></li>
+        <li> | </li>
+        <li><a href="#">官方Blog</a></li>
+        <li> | </li>
+        <li><a href="#">热词搜索</a></li>
+    </ul>
+    <div class="copyRight">
+        Copyright (C) 乐购网 2004-1016，All Rights Reserved
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $('.login-way li').each(function () {
+            $(this).on('click', function () {
+                $(this).addClass('on').siblings().removeClass('on')
+                $(this).closest('ul').siblings().find('li').eq($(this).index()).show().siblings('li')
+                    .hide();
+            })
+        })
+    </script>
+</body>
+
+</html>

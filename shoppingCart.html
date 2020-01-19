@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/shoppingCart.css">
+</head>
+
+<body>
+    <!-- 头部导航及logo -->
+    <div class="topNav">
+        <div class="container">
+            <p>legochina.cn</p>
+            欢迎光临<a href="index.html">乐购商城</a>，请 <a href="login.html">登陆</a> / <a href="register.html">注册</a>
+        </div>
+    </div>
+    <div class="header container clearfix">
+        <div class="logo">
+            <p>
+                购物车
+            </p>
+        </div>
+        <div class="search">
+            <div class="lookup">
+                <input type="text" placeholder="设计中的设计 原研哉">
+                <p>搜索</p>
+            </div>
+            <div class="address">
+                配送至
+                <select name="" id="">
+                    <option value="">成都市高新区三环内</option>
+                    <option value="">成都市武侯区天府新谷</option>
+                    <option value="">北京市中关村</option>
+                    <option value="">巴中市通江县</option>
+                    <option value="">成都市双流区华阳镇雅和南路xxx号</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品栏 -->
+    <div class="goods container">
+        <div class="all">
+            全部商品（2）
+        </div>
+        <div class="title">
+            <div class="choose">
+                <p></p>&nbsp;全选
+            </div>
+            <div class="pro">
+                商品
+            </div>
+            <div class="price">
+                单价
+            </div>
+            <div class="num">
+                数量
+            </div>
+            <div class="sum">
+                小计
+            </div>
+            <div class="operation">操作</div>
+
+        </div>
+
+        <p class="splitLine">分割线,没什么用</p>
+
+        <div class="product">
+            <p class="choose "></p>
+            <img src="./images/books/01.jpg" alt="">
+            <p class="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;白夜行&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="pri">79.80</p>
+            <div class="add-del">
+                <button class="reduce">-</button>
+                <span>0</span>
+                <button class="add">+</button>
+            </div>
+            <p class="sum">0</p>
+            <div class="oper">
+                <p class="del">删除</p>
+                <p>移到我的关注</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <p class="choose"></p>
+            <img src="./images/books/03.jpg" alt="">
+            <p class="title">从你的全世界路过</p>
+            <p class="pri">45.20</p>
+            <div class="add-del">
+                <button class="reduce">-</button>
+                <span>0</span>
+                <button class="add">+</button>
+            </div>
+            <p class="sum">0</p>
+            <div class="oper">
+                <p class="del">删除</p>
+                <p>移到我的关注</p>
+            </div>
+        </div>
+        <div class="product">
+            <p class="choose"></p>
+            <img src="./images/books/02.jpg" alt="">
+            <p class="title">&nbsp;&nbsp;&nbsp;&nbsp;偷影子的人&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="pri">51.00</p>
+            <div class="add-del">
+                <button class="reduce">-</button>
+                <span>0</span>
+                <button class="add">+</button>
+            </div>
+            <p class="sum">0</p>
+            <div class="oper">
+                <p class="del">删除</p>
+                <p>移到我的关注</p>
+            </div>
+        </div>
+        <div class="product">
+            <p class="choose"></p>
+            <img src="./images/books/04.jpg" alt="">
+            <p class="title">&nbsp;&nbsp;&nbsp;&nbsp;金融炼金术&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="pri">75.20</p>
+            <div class="add-del">
+                <button class="reduce">-</button>
+                <span>0</span>
+                <button class="add">+</button>
+            </div>
+            <p class="sum">0</p>
+            <div class="oper">
+                <p class="del">删除</p>
+                <p>移到我的关注</p>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="choose">
+                <p></p>&nbsp;全选
+            </div>
+            <div class="del">
+                删除选中商品
+            </div>
+            <div class="cho">
+                已选择
+                <span>0</span>
+                件商品
+            </div>
+            <div class="allPrice">
+                总价￥：
+                <span id="totalPrice" style="color: #f60;">0</span>
+            </div>
+            <div class="settlement">
+                去结算
+            </div>
+        </div>
+    </div>
+
+    <!-- "猜你喜欢" 栏 -->
+    <div class="title1 container">
+        <p>猜你喜欢</p>
+    </div>
+    <ul class="discount container clearfix">
+        <li>
+            <div class="pic">
+                <a href="#">
+                    <img src="./images/books/01.jpg" alt="">
+                </a>
+            </div>
+            <div class="disc">
+                <img src="./images/books/discount.jpg" alt="">
+            </div>
+            <div class="tit">
+                白夜行 东野上吾
+            </div>
+            <div class="recom">
+                推荐：
+                <img src="./images/books/star01.jpg" alt="">
+            </div>
+            <div class="price">
+                ￥&nbsp;:38
+                <span>￥&nbsp;:58</span>
+            </div>
+        </li>
+        <li>
+            <div class="pic">
+                <a href="#">
+                    <img src="./images/books/01.jpg" alt="">
+                </a>
+            </div>
+            <div class="disc">
+                <img src="./images/books/discount.jpg" alt="">
+            </div>
+            <div class="tit">
+                白夜行 东野上吾
+            </div>
+            <div class="recom">
+                推荐：
+                <img src="./images/books/star02.jpg" alt="">
+            </div>
+            <div class="price">
+                ￥&nbsp;:38
+            </div>
+        </li>
+        <li>
+            <div class="pic">
+                <a href="#">
+                    <img src="./images/books/01.jpg" alt="">
+                </a>
+            </div>
+            <div class="disc">
+                <img src="./images/books/discount.jpg" alt="">
+            </div>
+            <div class="tit">
+                白夜行 东野上吾
+            </div>
+            <div class="recom">
+                推荐：
+                <img src="./images/books/star02.jpg" alt="">
+            </div>
+            <div class="price">
+                ￥&nbsp;:38
+            </div>
+        </li>
+        <li>
+            <div class="pic">
+                <a href="#">
+                    <img src="./images/books/01.jpg" alt="">
+                </a>
+            </div>
+            <div class="disc">
+                <img src="./images/books/discount.jpg" alt="">
+            </div>
+            <div class="tit">
+                白夜行 东野上吾
+            </div>
+            <div class="recom">
+                推荐：
+                <img src="./images/books/star02.jpg" alt="">
+            </div>
+            <div class="price">
+                ￥&nbsp;:38
+            </div>
+        </li>
+        <li>
+            <div class="pic">
+                <a href="#">
+                    <img src="./images/books/01.jpg" alt="">
+                </a>
+            </div>
+            <div class="disc">
+                <img src="./images/books/discount.jpg" alt="">
+            </div>
+            <div class="tit">
+                白夜行 东野上吾
+            </div>
+            <div class="recom">
+                推荐：
+                <img src="./images/books/star02.jpg" alt="">
+            </div>
+            <div class="price">
+                ￥&nbsp;:38
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- 底部信息 -->
+    <div class="poster container"></div>
+    <div class="footer">
+        <div class="con">
+            <img src="./images/footer1.png" alt="">
+            <img src="./images/footer2.png" alt="">
+            <img src="./images/footer3.png" alt="">
+            <img src="./images/footer4.png" alt="">
+        </div>
+    </div>
+    <div class="footerCon clearfix">
+        <ul>
+            <p style="font-weight: bold;">购物指南</p>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">发票制度</a></li>
+            <li><a href="#">账户管理</a></li>
+            <li><a href="#">会员优惠</a></li>
+        </ul>
+        <ul>
+            <p style="font-weight: bold;">支付方式</p>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">网上支付</a></li>
+            <li><a href="#">礼品卡支付</a></li>
+            <li><a href="#">银行转账</a></li>
+        </ul>
+        <ul>
+            <p style="font-weight: bold;">订单服务</p>
+            <li><a href="#">订单配送查询</a></li>
+            <li><a href="#">订单状态说明</a></li>
+            <li><a href="#">自助取消订单</a></li>
+            <li><a href="#">自助修改订单</a></li>
+        </ul>
+        <ul>
+            <p style="font-weight: bold;">退换货</p>
+            <li><a href="#">退换货政策</a></li>
+            <li><a href="#">自助申请退换货</a></li>
+            <li><a href="#">退换货进度查询</a></li>
+            <li><a href="#">退款方式和时间</a></li>
+        </ul>
+        <ul>
+            <p style="font-weight: bold;">商家服务</p>
+            <li><a href="#">商家中心</a></li>
+            <li><a href="#">运营服务</a></li>
+            <li><a href="#">加入唯品会</a></li>
+        </ul>
+        <a href="#"><img src="./images/lego.png" alt=""></a>
+    </div>
+
+    <ul class="footerBar clearfix">
+        <li><a href="#">公司简介</a></li>
+        <li> | </li>
+        <li><a href="#">Investor Relations</a></li>
+        <li> | </li>
+        <li><a href="#">网站联盟</a></li>
+        <li> | </li>
+        <li><a href="#">乐购招商</a></li>
+        <li> | </li>
+        <li><a href="#">机构销售</a></li>
+        <li> | </li>
+        <li><a href="#">手机乐购</a></li>
+        <li> | </li>
+        <li><a href="#">官方Blog</a></li>
+        <li> | </li>
+        <li><a href="#">热词搜索</a></li>
+    </ul>
+    <div class="copyRight">
+        Copyright (C) 乐购网 2004-1016，All Rights Reserved
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $('.foot .settlement').click(function () {
+            window.location.href = './orderCenter.html'
+        })
+
+        // 点击‘全选’选择全部商品
+        $('.goods .title .choose>p').click(function () {
+            // alert(111)
+            $(this).toggleClass('on')
+            $('.product .choose').toggleClass('on')
+        })
+
+        // 点击‘单个商品’选择该商品
+        $('.product .choose').click(function () {
+            $(this).toggleClass('on')
+        })
+
+        // 点击‘全选’按钮选中的商品
+        $('.foot .choose p').click(function () {
+            $(this).toggleClass('on')
+            $('.product .choose').toggleClass('on')
+        })
+
+        // 点击‘删除’按钮选择该商品
+        $('.product .oper .del').click(function () {
+            // alert(111)
+            $(this).closest('.product').remove()
+        })
+
+        // 点击‘选中商品’进行商品删除
+        $('.foot .del').click(function () {
+            $('.product>p.on').closest('.product').remove()
+        })
+
+        /* 点击单个商品的 "+","-" 按钮实现单个商品数量和总价的增减 */
+        // console.log($('.product span').html())
+        // console.log($('.product p.sum').html())
+
+        // // 获取商品的增加，减少按钮
+        // let num = 0; // 定义初识商品数量
+        // let sum = 0;
+        // let pri = $('.product .pri').html()
+        // $('.product button.reduce').each(function () {
+        //     $(this).click(function () {
+
+        //         // 商品数量递减
+        //         num = $('.product span').html()
+        //         num--
+
+        //         // 计算单类商品的总价
+        //         sum -= pri
+
+        //         // 判断：当商品数量小于0时就无法进行减少
+        //         if (num < 0) {
+        //             num = 0
+        //             sum = 00
+        //         }
+        //         // 重新渲染值
+        //         $(this).siblings('span').html(num)
+        //         $(this).closest('.product').find('.sum').html(`${sum}.00`)
+
+        //     })
+        // })
+
+        // $('.product button.add').each(function () {
+        //     $(this).click(function () {
+        //         // 商品数量递增
+        //         num = $('.product span').html()
+        //         num++
+
+        //         // 计算单类商品的总价
+        //         sum += pri
+
+        //         // 判断：商品数量不能超过一定值
+        //         if (num > 10) {
+        //             alert('抱歉，商品数量不足！！！')
+        //             num = 10
+        //         }
+        //         // 重新渲染值
+        //         $(this).siblings('span').html(num)
+        //         $(this).closest('.product').find('.sum').html(`${sum}.00`)
+        //     })
+        // })
+
+        // 计算商品价格
+        let add = document.querySelectorAll('.product button.add') // 获取 "add" 增加按钮
+        let reduce = document.querySelectorAll('.product button.reduce') // 获取 "reduce" 减少按钮
+        let pri = document.querySelectorAll('.product .pri') // 获取单价
+        let txt = document.querySelectorAll('.product .add-del span') // 获取单类商品的数量
+        let sum = document.querySelectorAll('.product>p.sum') // 获取单类商品小计
+        let total = document.querySelector('.foot .cho span') // 获取所有商品合计
+        // console.log(total)
+        let totalPrice = document.getElementById('totalPrice') // 获取总价
+        // console.log(totalPrice)
+        let len = add.length
+        // console.log(len)
+
+        for (let i = 0; i < len; i++) {
+            // add 注册点击事件
+            add[i].onclick = function () {
+                if (txt[i].innerHTML >= 10) {
+                    alert('抱歉，商品数量不足！！！')
+                } else {
+                    txt[i].innerHTML++
+                    numChange(i)
+                }
+            }
+
+            // reduce 注册点击事件
+            reduce[i].onclick = function () {
+                if (--txt[i].innerHTML < 0) {
+                    txt[i].innerHTML = 0
+                }
+                numChange(i)
+            }
+        }
+
+        // 封装一个函数：当有任意一个列表数量发生变化时就执行函数，就是对新的数据进行统计，填值
+        function numChange(idx) {
+            let totalVal = 0;
+            let totalPriceVal = 0;
+
+            sum[idx].innerHTML = ((pri[idx].innerHTML) * (txt[idx].innerHTML)).toFixed(2)
+
+            for (let i = 0; i < len; i++) {
+                totalPriceVal += sum[i].innerHTML * 1
+                totalVal += txt[i].innerHTML * 1
+            }
+            console.log(totalVal)
+            console.log(totalPriceVal)
+            total.innerHTML = totalVal
+            totalPrice.innerHTML = totalPriceVal.toFixed(2)
+        }
+    </script>
+</body>
+
+</html>

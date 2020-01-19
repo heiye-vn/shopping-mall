@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+
+/* 头部样式 */
+.topNav {
+    background: #101010;
+    height: 28px;
+    font: 14px/2em 微软雅黑;
+}
+
+.topNav>div {
+    color: #bbb;
+    text-align: right;
+}
+
+.topNav>div>a {
+    color: #f60;
+}
+
+.topNav>div>p {
+    float: left;
+    margin-left: 260px;
+
+}
+
+.header {
+    height: 104px;
+}
+
+.logo {
+    position: absolute;
+    width: 258px;
+    height: 104px;
+    margin-top: -28px;
+    background-image: url(../images/login/bgLogo.jpg);
+}
+
+.logo p {
+    float: right;
+    width: 100px;
+    margin-right: 15px;
+    line-height: 104px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* 中间内容样式 */
+.info{
+    letter-spacing: 2px;
+}
+
+.info1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.info1 a{
+    text-decoration: underline;
+    color: #0f80ea;
+}
+
+.info2{
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+}
+.info2 p:nth-child(1){
+    margin-left: 5px;
+}
+.info2 p:nth-child(2){
+    margin-left: 570px;
+}
+
+.info3{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.info3>p{
+    width: 130px;
+    text-align: center;
+    background-color: #f60;
+    color: #fff;
+    font-size: 18px;
+}
+
+.info3>span{
+    margin-left: 20px;
+    color: #d0d0d0;
+    background-color: #fff;
+}
+
+.pay{
+    display: flex;
+    line-height: 95px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+}
+
+.pay>span{
+    width: 122px;
+    height: 36px;
+    line-height: 36px;
+    margin: 26px 0 0 66px ;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected{
+    border: 2px solid #f60;
+    background: url(../images/books/hook.jpg) no-repeat right bottom;
+}
+
+.pay>p.one{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 36px;
+    text-align: center;
+    margin: 26px 0 0 30px ;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+}
+
+.pay>p.two{
+    margin-left: 300px;
+}
+
+#btn{
+    float: right;
+    width: 230px;
+    line-height: 60px;
+    margin-top: 10px;
+    border: 0;
+    background-color: #f60;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer; 
+}
+
+.info4{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 110px;
+}
+
+.info4>p{
+    width: 130px;
+    text-align: center;
+    background-color: #76aff6;
+    color: #fff;
+    font-size: 18px;
+}
+
+.info4>span{
+    margin-left: 20px;
+    color: #d0d0d0;
+    background-color: #fff;
+}
+
+.otherPay{
+    display: flex;
+    line-height: 95px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+}
+
+/* 蒙层 */
+.mask {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+#wrap {
+    position: absolute;
+    z-index: 100;
+    width: 470px;
+    height: 278px;
+    /* margin: 100px auto; */
+    /* box-shadow: 5px 5px 5px #ccc; */
+    border: 2px solid #ccc;
+    display: none;
+}
+
+#wrap .top {
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+    background-color: #ccc;
+    color: #676767;
+}
+
+#wrap .top>p {
+    margin-left: 10px;
+}
+
+#wrap .top>span {
+    margin-left: 375px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#wrap .choose {
+    width: 100%;
+    height: 238px;
+    background-color: #fff;
+}
+
+#wrap .choose .question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 90px;
+    font-size: 20px;
+    color: #666;
+}
+
+#wrap .choose .tips{
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 20px;
+}
+
+#wrap .choose>.btn {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#wrap .choose>.btn button {
+    width: 120px;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+button.cancle {
+    background-color: #e6e6e6;
+    color: #666;
+}
+
+button.confirm {
+    background-color: #f60;
+    color: #fff;
+}
+
+
+/* 底部样式 */
+.poster {
+    height: 90px;
+    margin-top: 40px;
+    background-image: url(../images/books/poster.jpg);
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* margin-top: 50px; */
+    background-color: #f2f2f2;
+    border-top: 5px solid #f60;
+}
+
+.footer>.con>img {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.footer>a>img {
+    position: absolute;
+    top: -55px;
+    right: 200px;
+}
+
+.footerCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.footerCon ul {
+    width: 120px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    margin-left: 90px;
+}
+
+.footerCon ul li {
+    margin-top: 10px;
+}
+
+.footerCon ul li a {
+    color: #737373;
+}
+
+.footerCon ul li a:hover {
+    color: red;
+}
+
+.footerCon img {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footerBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.footerBar li {
+    float: left;
+    margin-right: 28px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+
+.copyRight {
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: '黑体';
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #555;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}

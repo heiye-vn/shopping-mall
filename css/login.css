@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+
+.topNav {
+    background: #101010;
+    height: 28px;
+    font: 14px/2em 微软雅黑;
+}
+
+.topNav>div {
+    color: #bbb;
+    text-align: right;
+}
+
+.topNav>div>a {
+    color: #f60;
+}
+
+.topNav>div>p {
+    float: left;
+    margin-left: 260px;
+
+}
+
+.logo img {
+    float: left;
+    margin-top: -28px;
+}
+
+.logo p {
+    float: left;
+    line-height: 76px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #bbb;
+}
+
+.content {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/login/background.jpg);
+    background-size: 1519px 500px;
+}
+
+.content form {
+    float: right;
+    width: 355px;
+    height: 370px;
+    margin: 65px 230px;
+    background-color: #fff;
+}
+
+.content form .login-way {
+    box-sizing: border-box;
+    width: 355px;
+    padding: 0 50px;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.content form .login-way>.one {
+    float: left;
+    cursor: pointer;
+}
+
+.content form .login-way>.two {
+    float: right;
+    cursor: pointer;
+}
+
+.content form .login-way>.on {
+    color: #f60;
+}
+
+.login-method li {
+    width: 355px;
+    height: 290px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+.login-method li:nth-child(2) {
+    display: none;
+}
+
+.login-method li.one p {
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+}
+
+.login-method li.one div {
+    width: 290px;
+    height: 20px;
+    margin: 10px auto;
+}
+
+.login-method li.one div>input {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+.login-method li.one div>span {
+    float: right;
+}
+
+.login-method li.one>.btn {
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 2em;
+    font-size: 20px;
+    background-color: #f60;
+    color: #fff;
+    cursor: pointer;
+}
+
+li.one p img {
+    float: left;
+    width: 40px;
+    height: 42px;
+}
+
+li.one p input {
+    float: left;
+    width: 250px;
+    height: 38px;
+    border: 0;
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.login-method li.one>.register {
+    width: 355px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: #fff;
+    margin: 30px 0 0 0;
+    border-top: 2px solid #ccc;
+    color: #f60;
+}
+
+.login-method li.one>.register>p {
+    width: 200px;
+    height: 42px;
+    background-color: #fff;
+    margin: 9px auto;
+    margin-left: 86px;
+    text-align: left;
+}
+
+.login-method li.one>.register>p span {
+    float: left;
+    line-height: 42px;
+    font-size: 20px;
+}
+
+.login-method li.two>div {
+    width: 320px;
+    height: 200px;
+    padding-top: 5px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    /* border: 2px solid red; */
+}
+
+.login-method li.two>p {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footerBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 50px;
+    margin-top: 10px;
+    /* background-color: lime; */
+}
+
+.footerBar li {
+    float: left;
+    margin-right: 28px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.footerBar li a {
+    font-family: '黑体';
+}
+
+.copyRight {
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-family: '黑体';
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #555;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}

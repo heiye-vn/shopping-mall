@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+
+.topNav {
+    background: #101010;
+    height: 28px;
+    font: 14px/2em 微软雅黑;
+}
+
+.topNav>div {
+    color: #bbb;
+    text-align: right;
+}
+
+.topNav>div>a {
+    color: #f60;
+}
+
+.topNav>div>p {
+    float: left;
+    margin-left: 260px;
+
+}
+
+.logo img {
+    float: left;
+    margin-top: -28px;
+}
+
+.logo img {
+    float: left;
+    margin-top: -28px;
+}
+
+.logo p.left {
+    float: left;
+    line-height: 76px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #777;
+}
+
+.logo p.right {
+    float: right;
+    /* width: 200px; */
+    margin-right: 40px;
+    line-height: 76px;
+    font-size: 18px;
+    color: #bbb;
+    letter-spacing: .2em;
+}
+
+i {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: -5px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.con {
+    border-bottom: 1px solid #ccc;
+}
+
+.con div {
+    width: 400px;
+    height: 44px;
+    line-height: 44px;
+    margin: 50px auto;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+.user>input,
+.pwd1>input,
+.pwd2>input,
+.phone>input {
+    float: right;
+    width: 300px;
+    height: 42px;
+    border: 0;
+    text-indent: 2rem;
+}
+
+.code>p {
+    float: right;
+    width: 128px;
+    line-height: 44px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: blue;
+}
+
+.code>input,
+.phoneCode>input {
+    float: right;
+    width: 166px;
+    height: 42px;
+    border: 0;
+    text-indent: 2rem;
+}
+
+.phoneCode>button {
+    float: right;
+    width: 128px;
+    line-height: 41px;
+    border: 0;
+    cursor: pointer;
+}
+
+.con .agree {
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.con .agree>input {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.con .Btn {
+    width: 400px;
+    line-height: 44px;
+    margin: 30px auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: aliceblue;
+    background-color: #f60;
+    cursor: pointer;
+}
+
+.footerBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 50px;
+    margin-top: 10px;
+    /* background-color: lime; */
+}
+
+.footerBar li {
+    float: left;
+    margin-right: 28px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.footerBar li a {
+    font-family: '黑体';
+}
+
+.copyRight {
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-family: '黑体';
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #555;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}

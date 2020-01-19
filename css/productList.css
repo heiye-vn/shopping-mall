@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+}
+body{
+    height: 20000px;
+}
+
+.topNav {
+    background: #101010;
+    height: 28px;
+    font: 14px/2em 微软雅黑;
+}
+
+.topNav>div {
+    color: #bbb;
+    text-align: right;
+}
+
+.topNav>div>a {
+    color: #f60;
+}
+
+header {
+    height: 84px;
+    /* background-color: pink; */
+}
+
+header>.logo {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    width: 200px;
+    height: 112px;
+    background: url('../images/logo.jpg');
+}
+
+header>.search {
+    position: relative;
+    height: 36px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+header>.search>input {
+    width: 440px;
+    height: 32px;
+    text-indent: 20px;
+    border: 2px solid #f60;
+}
+
+header>.search>button {
+    position: absolute;
+    top: 8px;
+    right: 258px;
+    width: 50px;
+    height: 34px;
+    text-indent: -99999px;
+    background: url('../images/bgicon.png');
+    border: none;
+}
+
+header>.search>.cart {
+    display: inline-block;
+    font-size: 14px;
+    width: 100px;
+    padding-right: 10px;
+    line-height: 36px;
+    background-color: #f60 !important;
+    color: blanchedalmond;
+    margin-left: 40px;
+    background: url('../images/bgicon.png') no-repeat;
+    background-position: 0 -40px;
+}
+
+header>.search>.myOrder {
+    display: inline-block;
+    width: 100px;
+    line-height: 33px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #eee;
+}
+
+header>nav {
+    position: absolute;
+    top: 86px;
+    left: 440px;
+    font-weight: bold;
+}
+
+header>nav>a {
+    margin-right: 20px;
+}
+
+.banner {
+    height: 430px;
+}
+
+.pb-carouselWarp {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.pb-carouselWarp .pb-carousel {
+    position: relative;
+    height: 100%;
+}
+
+.pb-carouselWarp .pb-carousel li {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pb-carouselWarp .pb-carousel li img {
+    width: 1000px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.pb-carouselWarp .pb-carousel .pb-this {
+    display: block;
+    left: 0;
+}
+
+.pb-carouselWarp .pb-carousel-ind {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pb-carouselWarp .pb-carousel-ind li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    text-align: center;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pb-carouselWarp .pb-carousel-ind .pb-this {
+    background-color: #f60;
+}
+
+.pb-carouselWarp .pb-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    border: none;
+}
+
+.pb-carouselWarp .pb-arrow-prev {
+    left: 0;
+    background: rgba(0, 0, 0, .5) url(../images/arrow-left.png) no-repeat center;
+}
+
+.pb-carouselWarp .pb-arrow-next {
+    right: 0;
+    background: rgba(0, 0, 0, .5) url(../images/arrow-right.png) no-repeat center;
+}
+
+.pb-carouselWarp[type='updown'] .pb-carousel-ind {
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.pb-carouselWarp[type='updown'] .pb-carousel-ind li {
+    float: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 5px 0;
+}
+
+.pb-carouselWarp[type='updown'] .pb-carousel-ind .pb-this {
+    background-color: #000;
+}
+
+.pb-carouselWarp[type='updown'] .pb-arrow {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -20px;
+    margin-top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.pb-carouselWarp[type='updown'] .pb-arrow-prev {
+    top: 20px;
+    background: #000000 url(../img/arrow-top.png) no-repeat center;
+}
+
+.pb-carouselWarp[type='updown'] .pb-arrow-next {
+    top: auto;
+    bottom: 20px;
+    background: #000000 url(../img/arrow-bottom.png) no-repeat center;
+}
+
+.banner>.saleRank{
+    float: right;
+    width: 200px;
+    height: 430px;
+    background-color:pink;
+}
+.poster{
+    position: relative;
+    width: 1200px;
+    height: 90px;
+    margin-top: 5px;
+}
+.poster>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title{
+    margin-top: 30px;
+    border-bottom: 5px solid #f60;
+}
+
+.title p{
+    width: 245px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #f60;
+    color: #fff;
+    font-size: 25px;
+}
+.discount li{
+    float: left;
+    width: 197px;
+    height: 256px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 4px;
+}
+.discount li:nth-child(1){
+    float: left;
+    width: 210px;
+    height: 256px;
+    padding-top: 4px;
+    background-color: #f2f2f2;
+}
+.discount li>.pic{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.discount li>.disc{
+    width: 90px;
+    height: 25px;
+}
+.discount li>.tit{
+    font-size: 14px;
+    width: 150px;
+    margin: 5px 15px;
+    color: #333;
+}
+.discount li>.recom{
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: red;
+    margin-left: 15px;
+}
+.discount li>.recom img{
+    vertical-align: bottom;
+}
+.discount li>.price{
+    width: 180px;
+    margin-left: 15px;
+    color: red;
+    font-size: 20px;
+}
+.discount li>.price>span{
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: line-through;
+    color: #777;
+}
+
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
